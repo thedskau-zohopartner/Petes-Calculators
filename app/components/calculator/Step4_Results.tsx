@@ -299,17 +299,27 @@ export default function Step4_Results({ results, departmentData, duration, setDu
             <div className="flex flex-col md:flex-row justify-between items-center gap-4 pt-6">
                 <button
                     onClick={() => handleStepChange(3)}
-                    className="font-black text-xs uppercase tracking-widest text-slate-400 hover:text-black transition-colors"
+                    className="font-black text-xs uppercase tracking-widest text-slate-400 hover:text-[#0066FF] transition-colors flex items-center gap-2 group"
                 >
-                    ← Review setup
+                    <span className="group-hover:translate-x-[-4px] transition-transform">←</span> Review setup
                 </button>
 
-                <button
-                    onClick={() => handleStepChange(1)}
-                    className="w-full max-w-xs bg-[#F4C700] text-black font-black text-lg px-12 py-4 rounded-2xl border-2 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all disabled:opacity-30 disabled:cursor-not-allowed disabled:shadow-none disabled:translate-x-0 disabled:translate-y-0 active:scale-95 uppercase tracking-widest"
-                >
-                    Restart Audit
-                </button>
+                <div className="flex flex-col md:flex-row gap-4 w-full lg:w-auto">
+                    <button
+                        onClick={() => handleStepChange(1)}
+                        className="w-full lg:w-auto bg-[#F4C700] text-black font-black text-lg px-8 py-4 rounded-2xl border-2 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all active:scale-95 uppercase tracking-widest text-center"
+                    >
+                        Restart Audit
+                    </button>
+                    <a
+                        href="https://www.atlanticdatabase.com/free-needs-assessment"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full lg:w-auto bg-[#0066FF] text-white font-black text-lg px-8 py-4 rounded-2xl border-2 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all flex items-center justify-center gap-2 uppercase tracking-widest text-center"
+                    >
+                        Book a meeting now
+                    </a>
+                </div>
             </div>
 
         </motion.div>
