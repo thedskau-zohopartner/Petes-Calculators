@@ -18,13 +18,13 @@ export default function CalculatorSection({ children }: { children: React.ReactN
       <div className="relative z-10 max-w-[1400px] mx-auto">
         {!isHome && (
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-16">
-            <Link href="/" className="flex items-center gap-2 font-black text-sm uppercase tracking-wider hover:text-[#0066FF] transition-colors group">
+            {/* <Link href="/" className="flex items-center gap-2 font-black text-sm uppercase tracking-wider hover:text-[#0066FF] transition-colors group">
               <span className="text-xl group-hover:-translate-x-1 transition-transform">←</span>
               Back to Tools
-            </Link>
+            </Link> */}
 
             {/* Compact Navigation Buttons */}
-            <div className="flex bg-slate-200/50 p-1.5 rounded-2xl border-[1.5px] border-slate-200">
+            {/* <div className="flex bg-slate-200/50 p-1.5 rounded-2xl border-[1.5px] border-slate-200">
               <Link
                 href="/automation"
                 className={clsx(
@@ -48,7 +48,7 @@ export default function CalculatorSection({ children }: { children: React.ReactN
               >
                 Cost Comparison
               </Link>
-            </div>
+            </div> */}
           </div>
         )}
 
